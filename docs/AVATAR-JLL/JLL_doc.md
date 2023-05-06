@@ -160,8 +160,6 @@ Herein, [VEB.js](https://virtualfactory.gitbook.io/vlft/tools/vebjs) (**V**irtua
 
 Any browser can be used to visualize the [PERFORM Lab with VEB.js](https://difactory.github.io/DF/scenes/VL/PERFORM_glb.html).
 
-
-
 The documentation of VEB.js provides details about its [functionalities](https://virtualfactory.gitbook.io/vlft/tools/vebjs/functionalities), [I/O files](https://virtualfactory.gitbook.io/vlft/tools/vebjs/input-output). 
 The use of the app can be personalized in terms of [scene](https://virtualfactory.gitbook.io/vlft/tools/vebjs/input-output#scene), [animation](https://virtualfactory.gitbook.io/vlft/tools/vebjs/input-output#animation), [environment](https://virtualfactory.gitbook.io/vlft/tools/vebjs/input-output#environment), and [configuration](https://virtualfactory.gitbook.io/vlft/tools/vebjs/input-output#configuration) by:
 1. Loading files from a local repository using specific commands in the [toolbar](https://virtualfactory.gitbook.io/vlft/tools/vebjs/functionalities#2.-toolbar)
