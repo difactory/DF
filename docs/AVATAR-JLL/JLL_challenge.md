@@ -52,7 +52,7 @@ Using a VR tool that you can freely choose, visualize the scene configuration of
 
 **Bonus:** the fast solution is to use VEB.js for the visualization. A bonus will be awarded if also another VR tool is used to visualize the scene.
 
-**Output:** 1) Screenshots of the VR scene; 2) Configuration files and instructions, if a VR tool different from VEB.js is used for the visualization.
+**Output:** 1) Screenshots of the VR scene; 2) Configuration files and instructions, only if a VR tool different from VEB.js is used for the visualization.
 
 ### Task T.1.2
 Elaborate the 4 trajectories (joint positions) and generate an animation that can be played in the selected VR environment (e.g. [animation for VEB.js](JLL_doc#242-robot-animation-in-vr-environment)).
@@ -71,7 +71,7 @@ Visually check the animation behaviour in the selected VR environment.
 ### Task T.1.4.
 Assess the execution of the trajectories in terms of distance from the target and possible collisions.
 
-**Output:** 1) Duration of the trajectory; 2) Does the trajectory reach the goal (yes/no)?; 3) Distance of the tip of the *Tool* from the local origin of *Workpiece_1*; 4) Identification of possible collisions of the robot or tool with other assets.
+**Output:** 1) Does the trajectory reach the goal (yes/no)?; 2) Identification of possible collisions of the robot or tool with other assets; 3) Distance of the tip of the *Tool* from the local origin of *Workpiece_1*; 
 
 **Hint_1:** The assessment of the trajectory can be carried out using different methods, e.g. a) visual check in VR environment, b) geometric calculations using data exported from the VR environment, c) execution in a robot simulation tool, d) other methods.
 
@@ -123,12 +123,12 @@ Visually check the animation behaviour in the selected VR environment.
 ### Task T.2.4.
 Assess the execution of the trajectory in terms of distance from the target and possible collisions.
 
-**Output:** 1) Duration of the trajectory; 2) Does the trajectory reach the goal (yes/no)?; 3) Distance of the tip of the *Tool* from the local origin of *Workpiece_1*; 4) Identification of possible collisions of the robot or tool with other assets.
+**Output:** 1) Does the trajectory reach the goal (yes/no)?; 2) Identification of possible collisions of the robot or tool with other assets; 3) Distance of the tip of the *Tool* from the local origin of *Workpiece_1*.
 
 ### Task T.2.5. (***Bonus***)
 Develop an MQTT client that is able to 1) receive the messages sent by the robot emulator (using [OntoGuiWeb](#trajectory-1)), 2) elaborate the content of the message an animation, 3) publish the animation via MQTT, 4) play the animation in the selected VR environment in ***quasi-real-time***.
 
-**Output:** 1) Program/script implementing the MQTT client; 2) Video showing the execution in quasi-real-time.
+**Output:** 1) Program/script implementing the MQTT client; 2) Explain how the MQTT client was developed and how it works.
 
 # **Challenge #3 - Generate a Trajectory**
 
@@ -159,22 +159,22 @@ The starting position is defined by the following [list of joint positions](JLL_
 
 The [target position](#trajectories) is the same as for the other challenges, i.e. the hole of Workpiece_1.
 
-**Output:** 1) Description of the workflow to generate the trajectory, including a) choice of the tool/method, b) setup of the scene, c) generation of the trajectory, d) exporting the trajectory to a text-based format, e) screenshots;
+**Output:** 1) Description of the workflow to generate the trajectory, including a) choice of the tool/method, b) setup of the scene, c) generation of the trajectory, d) exporting the trajectory to a text-based format;
 2) Trajectory of the robot in a text-based format (e.g. similarly to the [input trajectories of Challenge#1](#trajectory).
 
 ### Task T.3.2
 Elaborate the trajectory prepared in Task [T.3.1.](#task-t31) and generate an animation that can be played in the selected VR environment (e.g. [animation for VEB.js](JLL_doc#242-robot-animation-in-vr-environment)).
 
-**Output:** 1) animation files of the trajectory for VEB.js or equivalent configuration of a different VR environment to play the animations.
+**Output:** Animation file of the trajectory for VEB.js or equivalent configuration of a different VR environment to play the animations.
 
 ### Task T.3.3
 Visually check the animation behaviour in the selected VR environment.
 
-**Output:** 1) Video of the trajectory in the selected VR environment.
+**Output:** Video of the trajectory in the selected VR environment.
 
 ### Task T.3.4.
 Assess the execution of the trajectories in terms of distance from the target and possible collisions.
 
-**Output:** 1) Duration of the trajectory; 2) Does the trajectory reach the goal (yes/no)?; 3) Distance of the tip of the *Tool* from the local origin of *Workpiece_1*; 4) Identification of possible collisions of the robot or tool with other assets.
+**Output:** 1) Does the trajectory reach the goal (yes/no)?; 2) Identification of possible collisions of the robot or tool with other assets; 3) Distance of the tip of the *Tool* from the local origin of *Workpiece_1*.
 
 
