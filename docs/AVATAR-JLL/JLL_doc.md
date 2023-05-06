@@ -1,10 +1,10 @@
-﻿# AVATAR Joint Learning Lab - VR & Robotics Lab 
+﻿# **AVATAR Joint Learning Lab - VR & Robotics Lab**
 
 
 This document presents a practical guide to support the JLL activities that will take place at CNR-STIIMA taking advantage of its robotics lab, named PERFORM Lab.
 The activities are related to developing and updating the digital twin of the PERFORM Lab through a learning workflow based on VR technologies. Therefore, special attention is paid to the technical steps ranging from the creation of a 3D scene to the simulation of robot trajectories.
 
-# 1. PERFORM Lab
+# **1. PERFORM Lab**
 
 The [PERFORM Lab](https://www.stiima.cnr.it/about-stiima/laboratories-and-shopfloors/personal-robotics-for-manufacturing-laboratory/?lang=en) (Personal Robotics for Manufacturing Laboratory) is devoted to the development and validation of methods for the control of industrial and collaborative robots in advanced manufacturing. The lab is structured as an open space populated by heavy industrial robots, collaborative robots and mobile manipulators, in order to create an ecosystem of interacting autonomous machines.
 
@@ -18,7 +18,7 @@ A digital twin of the lab has been developed to support research and teaching ac
 *PERFORM Lab*
 
 
-# 2. Workflow
+# **2. Workflow**
 
 In the scope of the [AVATAR general workflow](https://avatar.gricad-pages.univ-grenoble-alpes.fr/avatar-site/mainchapters/AVATARWorkflows.html), the attention is focused on activities Scene creation (A1), Simulation (A2), and Operation integration (A5).
 
@@ -36,7 +36,7 @@ The proposed workflow and technologies can be employed for any lab and productio
 
 
 
-## 2.1. Definition of assets
+## *2.1. Definition of assets*
 The PERFORM Lab consists of several assets placed in the room. Assets are basic elements composing a system, e.g. physical objects like machine tools, parts, conveyors, buffers, but also processes and plans.
 Herein, only a subset of relevant assets is considered:
 
@@ -54,7 +54,7 @@ The characteristics of the robot are defined in the corresponding [URDF](http://
 
 The [URDF package of COMAU NS16](https://github.com/CNR-STIIMA-IRAS/comau-experimental/tree/master/comau_robots/comau_ns16hand) includes [3D meshes](https://github.com/CNR-STIIMA-IRAS/comau-experimental/tree/master/comau_robots/comau_ns16hand/comau_ns16hand_support/meshes) and the XML URDF file (cf. [comau_ns16hand.urdf](https://github.com/CNR-STIIMA-IRAS/comau-experimental/blob/master/comau_robots/comau_ns16hand/comau_ns16hand_support/urdf/comau_ns16hand.urdf)). Each joint can rotate only around Z-axis.
 
-The hierarchy of **Robot_1** consists of the following elements:
+The hierarchy of **Robot_1** consists of the following elements, where the prefix "Robot_1." is added to the joint/link name defined in the URDF file to have a unique identifier:
 
 ```
 Robot_1 (root)
@@ -73,7 +73,7 @@ Robot_1 (root)
                         └ Robot_1.Link_6
 ```
 
-
+Finally, the *ForceSensor* is attached to *Link_6* and the *Tool* is attached to the *ForceSensor*.
 
 ---
 
@@ -102,6 +102,12 @@ The 3D models of the laboratory building, controller, and table were already dev
 
 The .glb file of the robot ([Comau_ns16hand.glb](https://difactory.github.io/repository/models/VL/PERFORM/Comau_ns16hand.glb)) explicitly contains the definition of all its [elements in the hierarchy](#211-comau-robot-ns16). 
 
+The measurements of the robot *Tool* are provided in the following drawing.
+
+<img src="images/Tool_measurements.PNG" style="background-color: white;">
+
+*Drawing of the robot tool*
+
 
 If additional 3D models were needed, then several options can be explored:
 1. Reuse of existing models published in online libraries that can be downloaded (free or with a fee). The 3D models should be available in a neutral format (e.g. .STEP or .IGES) that can be later modified and converted to .gLTF/.glb, e.g. using [Blender](https://www.blender.org/).
@@ -114,7 +120,7 @@ More details about the development of [3D models and generation of gLTF files](h
 
 
 
-## 2.2. Scene configuration
+## *2.2. Scene configuration*
 The scene configuration defines the properties of the assets and place them in the layout. Herein, a particular workflow is adopted (see Figure), but other approaches can be followed depending on the available data and target application.
 
 <img src="https://797526934-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-Lh1dC9-F-cM6usakky7%2F-MjhK0wkkyaQLjuqqzxv%2F-MjhKmCUMoo5AdV7Evxh%2Finstantiation_workflow.png?alt=media&token=ef9896c6-5224-4517-81e8-aca9286e2cff" style="background-color: white;">
@@ -152,7 +158,7 @@ The JSON file for the PERFORM Lab is [PERFORM.json](https://difactory.github.io/
 
 Finally, the scene configuration can be defined as an [OWL ontology](https://www.w3.org/TR/owl2-overview/) that instantiates the [Factory Data Model](https://virtualfactory.gitbook.io/vlft/kb/fdm). The tool [OntoGuiWeb](https://virtualfactory.gitbook.io/vlft/tools/ontoguiweb) can support the instantiation.
 
-## 2.3. Visualization in VR environment
+## *2.3. Visualization in VR environment*
 
 The 3D scene can be visualized using several VR tools/environments, such as Unity, UnrealEngine, Godot, BabylonJS, etc. 
 
@@ -173,7 +179,7 @@ The use of the app can be personalized in terms of [scene](https://virtualfactor
 
 *Visualization of PERFORM Lab in VEB.js*
 
-## 2.4. Simulation
+## *2.4. Simulation*
 
 The planning, management, and monitoring of robots are a complex task that can be supported by specific software tools, e.g. [Gazebo](https://gazebosim.org/home), [RoboDK](https://robodk.com/), [Process Simulate](https://plm.sw.siemens.com/en-US/tecnomatix/products/process-simulate-software/), and ROS-based tools like [MoveIt](https://moveit.ros.org/).
 
@@ -226,13 +232,11 @@ According to the content of the [URDF file](#211-comau-robot-ns16), all robot jo
 
 The animation corresponding to the [example trajectory](files/trajectory_example.json) is provided in file [PERFORM_anim.json](https://difactory.github.io/repository/scenes/VL/PERFORM_anim.json).
 
-
-### 2.4.3. Robot animation in VEB.js
 The animation of the [example trajectory can be played in VEB.js](https://difactory.github.io/DF/scenes/VL/PERFORM_glb.html) pushing the play button in the [animation panel](https://virtualfactory.gitbook.io/vlft/tools/vebjs/functionalities#4.-animation-panel).
 
 
 
-## 2.5. MQTT Communication
+## *2.5. MQTT Communication*
 
 
 [MQTT](https://mqtt.org/) (Message Queuing Telemetry Transport) is a lightweight, publish-subscribe messaging protocol that is commonly used in the Internet of Things (IoT) and other applications. 
