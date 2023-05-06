@@ -10,6 +10,7 @@ The following trajectories are provided as [list of joint states](JLL_doc#241-ro
 - [trajectory_2.json](files/trajectory_2.json)
 - [trajectory_3.json](files/trajectory_3.json)
 - [trajectory_4.json](files/trajectory_4.json)
-- [trajectory_5.json](files/trajectory_5.json)
+
+
 
 

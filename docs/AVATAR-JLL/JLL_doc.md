@@ -247,3 +247,4 @@ For instance, the robot controller can publish a message containing the current 
 
 VEB.js can play the role of both [publisher and subscriber](https://virtualfactory.gitbook.io/vlft/tools/vebjs/functionalities#4.-animation-panel), exchanging messages that are structured to the [animation json](#242-robot-animation-in-vr-environment) schema.
 
+
