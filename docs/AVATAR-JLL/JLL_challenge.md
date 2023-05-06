@@ -75,12 +75,13 @@ Assess the execution of the trajectories in terms of distance from the target an
 
 **Hint_1:** The assessment of the trajectory can be carried out using different methods, e.g. a) visual check in VR environment, b) geometric calculations using data exported from the VR environment, c) execution in a robot simulation tool, d) other methods.
 
-**Hint_2:** Consider the drawing of the [robot tool](JLL_doc#212-3d-models-of-assets) to calculate the precise distance of the tool tip from the origin of the workpiece.
+**Hint_2:** VEB.js can be exploited to calculate the relative distance between assets, cf. the functionalities of the [Asset Info Panel](https://virtualfactory.gitbook.io/vlft/tools/vebjs/functionalities#6.-asset-info-panel).
+
+**Hint_3:** Consider the drawing of the [robot tool](JLL_doc#212-3d-models-of-assets) to calculate the precise distance of the tool tip from the origin of the workpiece.
 
 <img src="images/OriginTool.png">
 
 *Origin and bounding box of the robot tool*
-
 
 <img src="images/OriginWorkpiece_1.png">
 
