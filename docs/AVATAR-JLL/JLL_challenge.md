@@ -68,7 +68,7 @@ Visually check the animation behaviour in the selected VR environment.
 
 **Hints:** the animations can be loaded from a [local file or a remote repository](#scene-configuration-in-vebjs) if VEB.js is employed.
 
-### Task T.1.4.
+### Task T.1.4
 Assess the execution of the trajectories in terms of distance from the target and possible collisions.
 
 **Output:** 1) Does the trajectory reach the goal (yes/no)?; 2) Identification of possible collisions of the robot or tool with other assets; 3) Distance of the tip of the *Tool* from the local origin of *Workpiece_1*; 
@@ -120,12 +120,12 @@ Visually check the animation behaviour in the selected VR environment.
 **Output:** Video of the trajectory in the selected VR environment.
 
 
-### Task T.2.4.
+### Task T.2.4
 Assess the execution of the trajectory in terms of distance from the target and possible collisions.
 
 **Output:** 1) Does the trajectory reach the goal (yes/no)?; 2) Identification of possible collisions of the robot or tool with other assets; 3) Distance of the tip of the *Tool* from the local origin of *Workpiece_1*.
 
-### Task T.2.5. (***Bonus***)
+### Task T.2.5 (***Bonus***)
 Develop an MQTT client that is able to 1) receive the messages sent by the robot emulator (using [OntoGuiWeb](#trajectory-1)), 2) elaborate the content of the message an animation, 3) publish the animation via MQTT, 4) play the animation in the selected VR environment in ***quasi-real-time***.
 
 **Output:** 1) Program/script implementing the MQTT client; 2) Explain how the MQTT client was developed and how it works.
@@ -172,7 +172,7 @@ Visually check the animation behaviour in the selected VR environment.
 
 **Output:** Video of the trajectory in the selected VR environment.
 
-### Task T.3.4.
+### Task T.3.4
 Assess the execution of the trajectories in terms of distance from the target and possible collisions.
 
 **Output:** 1) Does the trajectory reach the goal (yes/no)?; 2) Identification of possible collisions of the robot or tool with other assets; 3) Distance of the tip of the *Tool* from the local origin of *Workpiece_1*.
