@@ -1,7 +1,7 @@
 ﻿# **AVATAR Joint Learning Lab - Challenges of VR & Robotics Lab**
 
 
-This document presents the challenges for the AVATAR JLL, making reference to the general [workflow documentation](JLL_doc#2-workflow). 
+This document presents the challenges for the AVATAR JLL, making reference to the general [workflow documentation](./JLL_doc). 
 The aim of the challange is to make practice with digital twin and VR technologies addressing a simplified problem that still makes sense from an industrial perspective while using real data.
 
 ## *Scene Configuration*
