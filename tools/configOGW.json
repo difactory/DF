@@ -1,15 +1,15 @@
 {
   "endpoint": {
     "server": "https://digital-factory.io/fuseki",
-    "database": "DOLCE",
+    "database": "VLFT",
     "user": "admin",
     "psw": "admin"
   },
   "OWL":{
     "sparqlDir": "https://difactory.github.io/repository/sparql/",
-    "sparqlDirTemplate": "https://appliedontolab.github.io/DOLCE/OWL/SPARQL/",
-    "defaultTbox": "https://w3id.org/DOLCE/OWL/DOLCEnaryRel",
-    "defaultNewGraph": "https://w3id.org/DOLCE/Tutorial/test"
+    "sparqlDirTemplate": "https://difactory.github.io/repository/sparql/",
+    "defaultTbox": "https://w3id.org/ontoeng/factory",
+    "defaultNewGraph": "https://w3id.org/ontoeng/test/"
   },
   "Apps":{
     "flask": "https://digital-factory.io/flask"
