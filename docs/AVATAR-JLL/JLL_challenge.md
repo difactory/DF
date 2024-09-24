@@ -13,7 +13,7 @@ Each challenge makes reference to its own scene configuration, thus highlighting
 VEB.js can be employed to visualize the [scene configuration](JLL_doc#23-visualization-in-vr-environment) using 1) local files or 2) specifying [URL parameters](https://virtualfactory.gitbook.io/vlft/tools/vebjs#url-parameters) pointing to remote files. In particular, the challenges will ask to personalize the animation. 
 This is a full example showing the setting of all relevant URL parameters, if the second option is chosen:
 
-http://ec2-54-174-51-194.compute-1.amazonaws.com/vebjs/?inputscene=https://difactory.github.io/repository/scenes/VL/PERFORM.json&repoMod3d=https://difactory.github.io/repository/models/VL/PERFORM/&inputanim=https://difactory.github.io/repository/scenes/VL/PERFORM_anim.json&inputenv=https://difactory.github.io/repository/scenes/VL/PERFORM_env.json
+https://digital-factory.io/vebjs/?inputscene=https://difactory.github.io/repository/scenes/VL/PERFORM.json&repoMod3d=https://difactory.github.io/repository/models/VL/PERFORM/&inputanim=https://difactory.github.io/repository/scenes/VL/PERFORM_anim.json&inputenv=https://difactory.github.io/repository/scenes/VL/PERFORM_env.json
 
 It is recommended to keep unchanged the value of parameters **repoMod3d** and **inputenv**. The value of **inputscene** will change according to the setup of the challenge. The value of **inputanim** must be personalized according to the results of the development tasks.
 
@@ -31,7 +31,7 @@ Specific tasks are defined for each challenge. The output of each taks will be d
 ## *Scene configuration*
 - [spreadsheet](https://difactory.github.io/repository/spreadsheets/VL_STIIMA_PERFORM-C1.xlsx)
 - [json file](https://difactory.github.io/repository/scenes/VL/PERFORM-C1.json)
-- [VEB.js visualization](http://ec2-54-174-51-194.compute-1.amazonaws.com/vebjs/?inputscene=https://difactory.github.io/repository/scenes/VL/PERFORM-C1.json&repoMod3d=https://difactory.github.io/repository/models/VL/PERFORM/&inputanim=linkToBeAdded&inputenv=https://difactory.github.io/repository/scenes/VL/PERFORM-C1_env.json&inputconfig=) (without setting of the animation, the string "linkToBeAdded" must be replaced accordingly).
+- [VEB.js visualization](https://digital-factory.io/vebjs/?inputscene=https://difactory.github.io/repository/scenes/VL/PERFORM-C1.json&repoMod3d=https://difactory.github.io/repository/models/VL/PERFORM/&inputanim=linkToBeAdded&inputenv=https://difactory.github.io/repository/scenes/VL/PERFORM-C1_env.json&inputconfig=) (without setting of the animation, the string "linkToBeAdded" must be replaced accordingly).
 
 ## *Trajectory*
 
@@ -93,7 +93,7 @@ Assess the execution of the trajectories in terms of distance from the target an
 ## *Scene configuration*
 - [spreadsheet](https://difactory.github.io/repository/spreadsheets/VL_STIIMA_PERFORM-C2.xlsx)
 - [json file](https://difactory.github.io/repository/scenes/VL/PERFORM-C2.json)
-- [VEB.js visualization](http://ec2-54-174-51-194.compute-1.amazonaws.com/vebjs/?inputscene=https://difactory.github.io/repository/scenes/VL/PERFORM-C2.json&repoMod3d=https://difactory.github.io/repository/models/VL/PERFORM/&inputanim=linkToBeAdded&inputenv=https://difactory.github.io/repository/scenes/VL/PERFORM-C2_env.json) (without setting of the animation, the string "linkToBeAdded" must be replaced accordingly).
+- [VEB.js visualization](https://digital-factory.io/vebjs/?inputscene=https://difactory.github.io/repository/scenes/VL/PERFORM-C2.json&repoMod3d=https://difactory.github.io/repository/models/VL/PERFORM/&inputanim=linkToBeAdded&inputenv=https://difactory.github.io/repository/scenes/VL/PERFORM-C2_env.json) (without setting of the animation, the string "linkToBeAdded" must be replaced accordingly).
 
 ## *Trajectory*
 The trajectory for this challenge is not provided in a json file, but it can be received as separate messages via [MQTT communication](JLL_doc#25-mqtt-communication). 
@@ -135,7 +135,7 @@ Develop an MQTT client that is able to 1) receive the messages sent by the robot
 ## *Scene configuration*
 - [spreadsheet](https://difactory.github.io/repository/spreadsheets/VL_STIIMA_PERFORM-C3.xlsx)
 - [json file](https://difactory.github.io/repository/scenes/VL/PERFORM-C3.json)
-- [VEB.js visualization](http://ec2-54-174-51-194.compute-1.amazonaws.com/vebjs/?inputscene=https://difactory.github.io/repository/scenes/VL/PERFORM-C3.json&repoMod3d=https://difactory.github.io/repository/models/VL/PERFORM/&inputanim=linkToBeAdded&inputenv=https://difactory.github.io/repository/scenes/VL/PERFORM-C3_env.json) (without setting of the animation, the string "linkToBeAdded" must be replaced accordingly).
+- [VEB.js visualization](https://digital-factory.io/vebjs/?inputscene=https://difactory.github.io/repository/scenes/VL/PERFORM-C3.json&repoMod3d=https://difactory.github.io/repository/models/VL/PERFORM/&inputanim=linkToBeAdded&inputenv=https://difactory.github.io/repository/scenes/VL/PERFORM-C3_env.json) (without setting of the animation, the string "linkToBeAdded" must be replaced accordingly).
 
 ## *Trajectory*
 No previously generated trajectory is provided for this challenge.
