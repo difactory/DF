@@ -1,0 +1,19 @@
+{
+  "endpoint": {
+    "server": "http://digital-factory.io/fuseki",
+    "database": "VLFT",
+    "user": "admin",
+    "psw": "admin"
+  },
+  "repo":{
+    "model3d": "/vebjs/repository/models/GLB/",
+    "animation": "/vebjs/repository/",
+    "sparqlDir": "http://localhost/OntoGuiWeb/sparql/"
+  },
+  "MQTT":{
+    "broker": "wss://broker.emqx.io:8084/mqtt",
+    "sub_base_topics": ["/DF/anim/json"],
+    "pub_base_topics": ["/DF/anim/json"],
+    "QoS": 0
+  }
+}
