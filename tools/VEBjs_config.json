@@ -12,8 +12,10 @@
   },
   "MQTT":{
     "broker": "wss://broker.emqx.io:8084/mqtt",
-    "sub_base_topics": ["/DF/anim/json"],
-    "pub_base_topics": ["/DF/anim/json"],
+    "base_topic": "/DF",
     "QoS": 0
+  },
+  "controller":{
+    "loopInterval": 50
   }
 }
