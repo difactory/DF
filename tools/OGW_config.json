@@ -12,7 +12,8 @@
     "defaultNewGraph": "https://w3id.org/ontoeng/test/"
   },
   "Apps":{
-    "flask": "https://digital-factory.io/flask"
+    "flask": "https://sim.digital-factory.io",
+    "flask0": "https://digital-factory.io/flask"
   },  
   "VEApp": {
     "url":"https://digital-factory.io/vebjs",
