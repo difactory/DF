@@ -23,8 +23,8 @@
   },
   "MQTT":{
     "broker": "wss://broker.emqx.io:8084/mqtt",
-    "sub_base_topic": "/DF/sync",
-    "pub_base_topic": "/DF/sync",
+    "sub_base_topic": "/DF",
+    "pub_base_topic": "/DF",
     "QoS": 0
   }
 }
