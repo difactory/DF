@@ -78,7 +78,33 @@
             "radiusFactorMin": 1.7,
             "radiusFactorMax": 2.7,
             "radiusFactorStep": 1
-        }
+        },
+		"background": {
+			"fragmentMode": "cube",
+			"surfaceMode": "sphere",
+			"volumeForm": "mixed",
+			"fragmentCount": 600,
+			"sourceCount": 100,
+
+			"distanceFactor": 8.0,
+			"widthFactor": 19.0,
+			"heightFactor": 19.0,
+
+			"fragmentSizeFactor": 1.5,
+			"minDepthRatio": 0.55,
+
+			"jitterRatio": 0.15,
+			"seed": 2026,
+
+			"minSourceSizeFactor": 0.05,
+			"maxSourceSizeFactor": 40,
+
+			"faceCameraFragments": false,
+
+			"materialSampling": "surfaceArea",
+			"saturatedColorPenalty": 0.35,
+			"colorSaturationFactor": 0.9
+		}
     },
     "env": {
         "skyboxTexture": "textures/studio.env",
