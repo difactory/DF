@@ -80,15 +80,15 @@
             "radiusFactorStep": 1
         },
 		"background": {
-			"fragmentMode": "cube",
-			"surfaceMode": "sphere",
+			"fragmentMode": "clone",
+			"surfaceMode": "plane",
 			"volumeForm": "mixed",
 			"fragmentCount": 600,
 			"sourceCount": 100,
 
-			"distanceFactor": 8.0,
-			"widthFactor": 19.0,
-			"heightFactor": 19.0,
+			"distanceFactor": 7.0,
+			"widthFactor": 9.0,
+			"heightFactor": 9.0,
 
 			"fragmentSizeFactor": 1.5,
 			"minDepthRatio": 0.55,
