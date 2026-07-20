@@ -121,6 +121,9 @@
 		]
     },
     "webxr":{
-        "teleportation": false
+        "movement": {
+            "teleportation": false,
+            "invertDirection": false
+        }
     }
 }
